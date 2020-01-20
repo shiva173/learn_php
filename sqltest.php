@@ -63,7 +63,6 @@ _END;
 
 
 $query_select = "SELECT * FROM classics";
-// добавление данных
 $result_select = mysqli_query($db_server, $query_select); 
 
 if (!$result_select) ("Сбой при доступе к базе данных: " . mysqli_error($db_server));
