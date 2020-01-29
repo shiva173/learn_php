@@ -30,6 +30,7 @@ if (isset($_SERVER['PHP_AUTH_USER']) &&
 
 		$result->close();
 
+
 		$salt1 = "!@%&";
 		$salt2 = "*^%";
 		$token = hash('ripemd128', "$salt1$pw_temp$salt2");
@@ -48,6 +49,7 @@ if (isset($_SERVER['PHP_AUTH_USER']) &&
 		die("<p><a href=continue.php> click here for continue</a></p>");
 
 	}
+
 		else die("Не верная комбинация");
 	} 
 
